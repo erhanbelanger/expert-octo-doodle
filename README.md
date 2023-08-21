@@ -7,3 +7,4 @@
 ## When a change to the calendar is made, the save button allows changes to be saved
 
 # Local storage holds the changes and when the page is refreshed, the changes do not go away
+

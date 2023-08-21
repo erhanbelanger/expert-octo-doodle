@@ -10,12 +10,12 @@ $(function () {
   // useful when saving the description in local storage?
   //
   $(".saveBtn").on("click", function () {
-    //referring to clicked button el
+    // referring to clicked button el
     var timeBlockId = $(this).closest(".time-block").attr("id");
-//finding associated text area
-var userEvent = $(this).siblings(".description").val();
-//Saving the input text in block for calandar
-localStorage.setItem(timeBlockId, userEvent);
+    // finding associated text area
+    var userEvent = $(this).siblings(".description").val();
+    // Saving the input text in block for calandar
+    localStorage.setItem(timeBlockId, userEvent);
   });
   // TODO: Add code to apply the past, present, or future class to each time
   // block by comparing the id to the current hour. HINTS: How can the id
@@ -29,15 +29,15 @@ localStorage.setItem(timeBlockId, userEvent);
     //adding past class
     if (timeBlockHour < currentHour) {
       $(this).addClass("past");
-}
-//adding present class
-else if (timeBlockHour === currentHour) {
-  $(this).addClass("present");
-}
-//adding future class
-else {
-  $(this).addClass("future");
-}
+    }
+    //adding present class
+    else if (timeBlockHour === currentHour) {
+      $(this).addClass("present");
+    }
+    //adding future class
+    else {
+      $(this).addClass("future");
+    }
   });
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
@@ -51,5 +51,5 @@ else {
     }
   });
   // TODO: Add code to display the current date in the header of the page.
-$("#currentDay").text(dayjs().format("dddd, MMMM D, YYYY"));
+  $("#currentDay").text(dayjs().format("dddd, MMMM D, YYYY"));
 });
