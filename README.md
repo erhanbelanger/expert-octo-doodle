@@ -8,3 +8,4 @@
 
 # Local storage holds the changes and when the page is refreshed, the changes do not go away
 
+# ![Screen Shot 2023-08-20 at 9 21 34 PM](https://github.com/erhanbelanger/expert-octo-doodle/assets/139185609/4570dd26-c5f8-429f-8541-bffb68181d10)
